@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* medias */
+
+@media (max-width: 480px) {
+    
+    .header2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "desplegable buscar";
+    }
+
+    .header2 img {
+        display: none;
+    }
+
+    .header2 .menu__mobile {
+        display: block;
+        grid-area: desplegable;
+        display: block;
+        grid-area: desplegable;
+        margin: 10%;
+    }
+
+
+    .header2 .menu__mobile li a{
+        justify-content: left;
+        padding-left: 10px;
+    }
+
+    .header2 .navbar.navbar-light .container-fluid .d-flex {
+        grid-area: buscar;
+    }
+
+    .header2 .navbar.navbar-light .container-fluid .d-flex button {
+        display: none
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .categorias .menu {
+        display: none;
+    }
+
+    .ultimasNovedades__descripcion {
+        display: none;
+    }
+
+    
+
+    
+}
+
+
+@media (min-width: 481px) {
+    
+    .header2 .menu__mobile {
+        display: none;
+    }
+
+    .header2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "logo buscar carrito";
+    }
+    
+}
+
+
+/* Encabezados general*/
+
+.header1 {
+    background-color: black;
+    width: auto;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header1 h4 {
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.header2 {
+    background-color: #343f5e;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 70px;
+}
+
+.header2 img {
+    margin-left: 10%;
+    justify-content: left;
+    grid-area: logo;
+}
+
+.header2 .navbar.navbar-light .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid: buscar;
+}
+
+
+.header2 a{
+    display: flex;
+    margin-right:10%;
+    justify-content: right;
+    grid-area: carrito;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Menú general */
+.menu {
+    background-color: #343f5e;
+}
+
+.menu ul{ 
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+.menu ul li a { 
+    margin-right: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/* Pie de pág general */    
+
+.custom-container {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+}
+
+.custom-container footer.py-5 {
+    background-color: black;
+    color: white;
+}
+  
+.custom-container .col-6.col-md-2.mb-3 li a {
+    background-color: black;
+    color: white;
+}
+  
+
+/* Index */
+
+
+.ofertas img {
+    width: 100%;
+    margin: 0%;
+
+}
+
+.ultimasNovedades {
+    display: flex;
+    background-color: #343f5e;
+}
+
+.ultimasNovedades__descripcion  {
+    display: flex;
+    width: 150px;
+    height: 230px;
+    padding: 2%;
+}
+
+.ultimasNovedades__descripcion div img{
+    display: inline;
+    width: 136px;
+    height: 136px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ultimasNovedades__descripcion div p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.ultimasNovedades .listadoProductos__index {   
+    width: 100%;
+}
+
+.ultimasNovedades .listadoProductos__index .row{
+    margin: 2%;
+    justify-content: center;
+}
+
+.ultimasNovedades .listadoProductos__index .col .card img{
+    height: 30vh;
+}
+
+.ultimasNovedades .listadoProductos__index .col .card .card-body{
+    height: 30%;
+    position: relative; 
+}
+
+.ultimasNovedades .listadoProductos__index .col .card .card-body h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+}
+
+.ultimasNovedades .listadoProductos__index .col .card .card-body .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60%;
+}
+
+.ultimasNovedades .listadoProductos__index .col .card .card-body a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.ultimasNovedades .listadoProductos__index .col .card .card-body .precio {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+}
+
+.premios {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh 15vh 20vh;
+    background-color: #feedd9;
+    grid-template-areas: 
+    "imagen titulo"
+    "imagen parrafo"
+    "imagen parrafo";
+
+}
+
+.premios img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: imagen;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.premios .reconocimientos {
+ display: block;
+ margin-top: 2%;
+ padding-left: 2%;
+ height: auto;
+ font-family: 'Montserrat', sans-serif;
+}
+.premios .reconocimiento__titulo{
+ font-size: 150%;
+ font-weight: bold;
+ padding: 2%;
+ grid-area: titulo;
+} 
+
+.premios .reconocimiento__parrafo {
+    font-size: 100%;
+    padding: 2%;
+    grid-area: parrafo;
+} 
+
+
+/* Anime & Manga & Merch*/
+
+
+.productos {
+    display: flex;
+    background-color:#feedd9;
+}
+
+.productos .filtro {
+    margin: 4%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.productos .filtro p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.productos .listadoProductos .row{
+    margin: 2%;
+}
+
+.productos .listadoProductos .col .card img{
+    height: 40vh;
+}
+
+.productos .listadoProductos .col .card .card-body{
+    height: 40%;
+    position: relative; 
+}
+
+.productos .listadoProductos .col .card .card-body h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+}
+
+.productos .listadoProductos .col .card .card-body .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60%;
+}
+
+.productos .listadoProductos .col .card .card-body a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.productos .listadoProductos .col .card .card-body .precio {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+}
+
+
+
+/* Cómo comprar */
+
+.comoComprar {
+     background-color:#feedd9;
+     padding: 26px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.comoComprar h2 {
+ 
+    color:#feedd9 ;
+    background-color: #343f5e;
+    border-color: #ff4342;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 24px;
+    width: 800px;
+    height: auto;
+    margin: 24px;
+}
+
+.comoComprar ol{
+    margin: 40px; 
+}
+
+.comoComprar li{
+    padding: 20px; 
+}
+
+.consideraciones {
+    padding: 40px; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff4342;
+    color: #feedd9;
+
+}
+
+/* Sobre nosotros*/
+
+.quienesSomos {
+    background-color:#feedd9;
+    display: flex;
+    padding: 30px;
+}
+
+.imagenQuienesSomos {
+    display: inline;
+    width: 30%;
+    height: auto;
+    margin-left: 40px;
+}
+
+.imagenQuienesSomos img{
+    width: 260px;
+    height: auto;
+}
+
+
+.detalleQuienesSomos {
+    display: inline;
+    width: 70%;
+    height: auto;
+    color: #343f5e;
+}
+
+.detalleQuienesSomos .titulo {
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.detalleQuienesSomos .descripcion {
+
+    padding: 15px;
+}
+
+
+.contacto { 
+
+    background-color: #343f5e  ;
+    color: white;
+    padding-left: 60px;
+    padding-top: 10 px;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+
+
