@@ -397,6 +397,11 @@
     padding: 20px; 
 }
 
+.comoComprar li .titulo{
+    font-weight: bold;
+    font-size: 150%;
+}
+
 .consideraciones {
     padding: 40px; 
     font-family: 'Montserrat', sans-serif;
