@@ -1,0 +1,58 @@
+
+.productos {
+    display: flex;
+    background-color:#feedd9;
+    .filtro {
+        margin: 4%;
+        font-family: 'Montserrat', sans-serif;
+        p {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+    .listadoProductos{
+        .row{
+        margin: 2%;
+            .col{
+                .card{
+                    img{
+                        height: 40vh;
+                    }
+                    card-body{
+                        height: 40%;
+                        position: relative; 
+                        h5 {
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: bold;
+                            font-size: 100%;
+                            text-align: center;
+                        }
+                        .card-text {
+                            font-family: 'Montserrat', sans-serif;
+                            font-size: 60%;
+                        }
+                        a {
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: bold;
+                            font-size: 0.8rem;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0; 
+                            right: 0;
+                            text-align: center;
+                            padding-bottom: 5%;
+                        }
+                        .precio {
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: bold;
+                            font-size: 90%;
+                            text-align: center;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+

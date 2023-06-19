@@ -1,0 +1,34 @@
+.comoComprar {
+    background-color:#feedd9;
+    padding: 26px;
+    font-family: 'Montserrat', sans-serif;
+    h2 {
+        color:#feedd9 ;
+        background-color: #343f5e;
+        border-color: #ff4342;
+        border-style: solid;
+        border-radius: 8px;
+        padding: 24px;
+        width: 800px;
+        height: auto;
+        margin: 24px;
+    }
+    ol{
+        margin: 40px; 
+        li{
+            padding: 20px; 
+            .titulo{
+                font-weight: bold;
+                font-size: 150%;
+            } 
+        }
+    }
+}
+
+.consideraciones {
+   padding: 40px; 
+   font-family: 'Montserrat', sans-serif;
+   background-color: #ff4342;
+   color: #feedd9;
+
+}

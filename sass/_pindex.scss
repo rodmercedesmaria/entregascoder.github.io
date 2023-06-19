@@ -1,0 +1,120 @@
+
+
+.ofertas {
+    img {
+    width: 100%;
+    margin: 0%;
+    }
+}
+
+.ultimasNovedades {
+    display: flex;
+    background-color: #343f5e;
+    &__descripcion  {
+        display: flex;
+        width: 150px;
+        height: 230px;
+        padding: 2%;
+        div{
+            img{
+                display: inline;
+                width: 136px;
+                height: 136px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            p {
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+    .listadoProductos__index {   
+        width: 100%;
+        .row{
+            margin: 2%;
+            justify-content: center;
+        }
+        .col .card{    
+            img{
+                height: 30vh;
+            }
+            .card-body{
+                height: 30%;
+                position: relative; 
+                h5 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 100%;
+                    text-align: center;
+                }
+                .precio {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 90%;
+                    text-align: center;
+                }
+            }
+            .card-text {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 60%;
+            }
+            a {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-size: 0.8rem;
+                position: absolute;
+                bottom: 0;
+                left: 0; 
+                right: 0;
+                text-align: center;
+                padding-bottom: 5%;
+            }
+            
+        }
+    }
+}
+
+.premios {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh 15vh 20vh;
+    background-color: #feedd9;
+    grid-template-areas: 
+    "imagen titulo"
+    "imagen parrafo"
+    "imagen parrafo";
+    img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        grid-area: imagen;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    
+    }
+    .reconocimientos {
+        display: block;
+        margin-top: 2%;
+        padding-left: 2%;
+        height: auto;
+        font-family: 'Montserrat', sans-serif;
+        .reconocimiento__titulo{
+            font-size: 150%;
+            font-weight: bold;
+            padding: 2%;
+            grid-area: titulo;
+        } 
+        .reconocimiento__parrafo {
+            font-size: 100%;
+            padding: 2%;
+            grid-area: parrafo;
+        } 
+    }
+   
+}

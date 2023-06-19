@@ -1,0 +1,39 @@
+
+.quienesSomos {
+    background-color:#feedd9;
+    display: flex;
+    padding: 30px;
+    .imagenQuienesSomos {
+        display: inline;
+        width: 30%;
+        height: auto;
+        margin-left: 40px;
+        img{
+            width: 260px;
+            height: auto;
+        }
+    }
+    .detalleQuienesSomos {
+        display: inline;
+        width: 70%;
+        height: auto;
+        color: #343f5e;
+        .titulo {
+            font-size: 38px;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        .descripcion {
+            padding: 15px;
+        }
+    }
+}
+
+
+.contacto { 
+    background-color: #343f5e  ;
+    color: white;
+    padding-left: 60px;
+    padding-top: 10 px;
+    padding-bottom: 10px;
+}

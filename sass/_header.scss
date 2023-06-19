@@ -1,0 +1,119 @@
+@media (max-width: 480px) {
+    
+    .header2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "desplegable buscar";
+        img {
+            display: none;
+        }
+        .menu__mobile {
+            display: block;
+            grid-area: desplegable;
+            margin: 10%;
+            li a{
+                justify-content: left;
+                padding-left: 10px;
+            }
+        }
+        .navbar.navbar-light .container-fluid .d-flex {
+            grid-area: buscar;
+            button {
+                display: none
+            }
+        }
+        
+    }
+    .banner img {
+        display: none;
+    }
+    .categorias .menu {
+        display: none;
+    }
+    .ultimasNovedades__descripcion {
+        display: none;
+    }
+}
+
+
+@media (min-width: 481px) {
+    
+    .header2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "logo buscar carrito";
+        .menu__mobile {
+        display: none;
+    }
+   }
+}
+
+
+.header1 {
+    background-color: black;
+    width: auto;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        color: white;
+        text-align: center;
+        line-height: 24px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+}
+
+
+.header2 {
+    background-color: #343f5e;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    img {
+        margin-left: 10%;
+        justify-content: left;
+        grid-area: logo;
+    }
+    .navbar.navbar-light .container-fluid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid: buscar;
+    }
+    a{
+        display: flex;
+        margin-right:10%;
+        justify-content: right;
+        grid-area: carrito;
+    }
+}
+
+
+.banner {
+    img{
+    width: 100%;
+    height: 100%;
+    }
+}
+
+/* Menú general */
+.menu {
+    background-color: #343f5e;
+    ul{ 
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        li {
+            a { 
+            margin-right: 20px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+}
+
