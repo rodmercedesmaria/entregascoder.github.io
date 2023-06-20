@@ -1,39 +1,108 @@
+$breakpoint: 480px;
 
-.quienesSomos {
-    background-color:#feedd9;
-    display: flex;
-    padding: 30px;
-    .imagenQuienesSomos {
-        display: inline;
-        width: 30%;
-        height: auto;
-        margin-left: 40px;
-        img{
-            width: 260px;
-            height: auto;
-        }
+.tituloSobreNosotros {   
+    h1 {
+        background-color: #feedd9;
+        padding-top: 5%;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
     }
+}
+
+.sobreNosotros {
+    background-color: #feedd9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+    padding: 5%;
+  
+    .imagenQuienesSomos {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+      }
+    }
+  
     .detalleQuienesSomos {
-        display: inline;
-        width: 70%;
-        height: auto;
-        color: #343f5e;
+        grid-row: 1;
+        grid-column: 2/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
         .titulo {
-            font-size: 38px;
             font-weight: bold;
-            padding-top: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-size: xx-large;
+        
         }
         .descripcion {
-            padding: 15px;
+            width: 100%;
+        }
+    }
+  
+    .nuestrahistoria {
+        grid-row: 2;
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+  
+        .titulo {
+            font-weight: bold;
+            font-family: "Montserrat", sans-serif;
+            font-size: xx-large;
+        }
+    }
+  
+    .imagenNuestrahistoria {
+        grid-row: 2;
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
 
-
-.contacto { 
-    background-color: #343f5e  ;
+.contacto {
+    background-color: black;
     color: white;
-    padding-left: 60px;
-    padding-top: 10 px;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    padding: 5%;
+    align-items: center;
+    h3 {
+        text-align: center;
+        grid-column: 1;
+    }
+    .formcontact {
+        grid-column: 2;
+    }
+
 }
+
+@media (max-width: $breakpoint) {
+    .sobreNosotros,
+    .contacto {
+      display: block;
+    }
+  }

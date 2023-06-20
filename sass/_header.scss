@@ -1,4 +1,7 @@
-@media (max-width: 480px) {
+$breakpoint: 480px;
+$breakpoint-plus-1: $breakpoint + 1;
+
+@media (max-width: $breakpoint) {
     .header2 {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -35,7 +38,7 @@
 }
 
 
-@media (min-width: 481px) {
+@media (min-width: $breakpoint-plus-1) {
     
     .header2 {
         display: grid;

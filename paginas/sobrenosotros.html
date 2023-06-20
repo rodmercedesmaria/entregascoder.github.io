@@ -82,67 +82,69 @@
 
     </section>
 
-    <section class="quienesSomos">
-
-
-        <section class="imagenQuienesSomos">
-           
+    <section class="tituloSobreNosotros">
+        <h1> Sobre nosotros</h1>
+    </section>
+    <section class="sobreNosotros">
+        
+        <div class="imagenQuienesSomos">
             <img src="../imgs/totoro.png" alt="Totoro">
-
-        </section>
-
-
-        <section class="detalleQuienesSomos">   
+        </div>
+        <div class="detalleQuienesSomos">   
             <p class="titulo"> Quiénes somos... </p>
-
-            
             <p class="descripcion">
+             El Kai Market es una marca especializada en la comercialización y distribución de manga & comics. 
 
-                El Kai Market es una marca especializada en la comercialización y distribución de manga & comics. 
-
-                Contamos con el más amplio catálogo de literatura fantástica, de horror y ciencia ficción y una amplia oferta de merchandising, figuras de acción, posters, trading cards e ítems coleccionables para los amantes del género.
-
-                <br><br>
-
-
+             Contamos con el más amplio catálogo de literatura fantástica, de horror y ciencia ficción y una amplia oferta de merchandising, figuras de acción, posters, trading cards e ítems coleccionables para los amantes del género.
             </p>
-
-
+        </div>
+        
+        <div class="nuestrahistoria">     
             <p class="titulo">
                 Nuestra historia...
             </p>
-
             <p class="descripcion">
                 Surgimos como un emprendimiento familiar en 1982, especiacilizandonos en la venta de productos de culto en el país. Con más de 40 años de experiencia en el rubro, nos diferenciamos por nuestro servicio personalizado, el trato amable con el cliente y nuestra pasión por el arte y el mundo fantástico.
             </p>
-        </section>
-
-
+        </div>
+        <div class="imagenNuestrahistoria">
+            <img src="../imgs/nosotros.jpg" alt="nosotros">
+        </div>
     </section>
 
     <section class="contacto"> 
 
-        <p> Contactanos
+        <h3> ¿Tienes alguna duda? 
+            ¡Estamos a un mensaje de distancia!
+            Escribenos y te responderemos ni bien lo leamos. 
+        </h3>
 
-        </p>
+        <div class="formcontacto">
+            <p> Contactanos 
+            </p>
 
-        <form action="" method="get" enctype="text/plain">
-            <label for="Nombre"> Nombre</label>
-            <input type="text" name="" id="nombre">
-            <br><br>
-            <label for="mail"> Mail</label>
-            <input type="email" id="mail">
-            <br><br>
-            <label for="pass"> Password </label>
-            <input type="password" name="" id="pass">
-            <br><br>
-            
-            <textarea name="" id="" cols="30" rows="10"> Deja tus comentarios </textarea>
-            <br><br>
-            <input type="submit" value="enviar"> 
-            <input type="reset" value="borrar todo">
-    
-        </form>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"> Dirección de email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"> A donde te responderemos</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> Asunto</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"> Ingresa el motivo de tu consulta/contacto</div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades de Kai Market</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
 
 
 
