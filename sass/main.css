@@ -89,6 +89,11 @@
   grid-area: carrito;
 }
 
+a img {
+  height: 40px;
+  width: 40px;
+}
+
 .banner img {
   width: 100%;
   height: 100%;
@@ -255,6 +260,27 @@ h3 {
   padding: 2%;
   grid-area: parrafo;
 }
+@media (max-width: 768px) {
+  .reconocimiento .premios {
+    display: block;
+  }
+  .reconocimiento .premios img {
+    order: 2;
+    padding: 5%;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .reconocimiento .premios .premio__detalle {
+    padding: 2%;
+  }
+  .reconocimiento .premios h4 {
+    order: 3;
+  }
+  .reconocimiento .premios h5 {
+    order: 4;
+  }
+}
 
 .productos {
   display: flex;
@@ -351,29 +377,30 @@ h3 {
   text-align: center;
   padding: 2%;
 }
-.comoComprar .consideraciones p {
+
+.consideraciones p {
   padding: 2%;
   font-family: "Montserrat", sans-serif;
   background-color: #ff4342;
   color: #feedd9;
 }
+
 @media (min-width: 480px) {
-  .comoComprar .comoComprar__detalle {
+  .comoComprar__detalle {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 480px) {
-  .comoComprar .comoComprar__detalle {
+  .comoComprar__detalle {
     display: block;
     padding: 5%;
     padding-bottom: 10%;
   }
-  .comoComprar .comoComprar__detalle .comoComprar__paso {
+  .comoComprar__detalle .comoComprar__paso {
     margin-bottom: 10%;
   }
 }
-
 .tituloSobreNosotros h1 {
   background-color: #feedd9;
   padding-top: 5%;

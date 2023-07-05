@@ -1,81 +1,77 @@
 .comoComprar {
-    background-color: #feedd9;
-    padding: 8%;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #feedd9;
+  padding: 8%;
+  font-family: 'Montserrat', sans-serif;
   
-    &__titulo {
-      padding: 2%;
-      text-align: center;
-  
-      h1 {
-        padding: 2%;
-        font-weight: bold;
-      }
+  &__titulo {
+   padding: 2%;
+    text-align: center; 
+    h1 {
+    padding: 2%;
+    font-weight: bold;
     }
+  }
   
-    &__detalle {
-      display: grid;
-      grid-gap: 10%;
-      margin: 5%;
-      padding-top: 5%;
-  
-      .comoComprar__paso {
+  &__detalle {
+    display: grid;
+    grid-gap: 10%;
+    margin: 5%;
+    padding-top: 5%;
+    .comoComprar__paso {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .paso-imagen {
+        max-width: 100%;
+        width: 40%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-  
-        .paso-imagen {
+        img {
           max-width: 100%;
-          width: 40%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-  
-          img {
-            max-width: 100%;
-            max-height: 100%;
-          }
-        }
-  
-        h6 {
-          font-weight: bold;
-          text-align: center;
-          margin: 5%;
-        }
-  
-        p {
-          text-align: center;
-          padding: 2%;
+          max-height: 100%;
         }
       }
-    }
-  
-    .consideraciones {
-        p {
-            padding: 2%; 
-            font-family: 'Montserrat', sans-serif;
-            background-color: #ff4342;
-            color: #feedd9;
-        }
-    }
-
-    @media (min-width: 480px) {
-      .comoComprar__detalle {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+      h6 {
+        font-weight: bold;
+        text-align: center;
+        margin: 5%;
       }
-    }
   
-    @media (max-width: 480px) {
-      .comoComprar__detalle {
-        display: block;
-        padding: 5%;
-        padding-bottom: 10%;
-  
-        .comoComprar__paso {
-          margin-bottom: 10%;
-        }
+      p {
+        text-align: center;
+        padding: 2%;
       }
     }
   }
+}
+
+.consideraciones {
+  p {
+    padding: 2%; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff4342;
+    color: #feedd9;
+  }
+}
+
+@media (min-width: 480px) {
+  .comoComprar__detalle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+  
+@media (max-width: 480px) {
+  .comoComprar__detalle {
+    display: block;
+    padding: 5%;
+    padding-bottom: 10%;
+  
+   .comoComprar__paso {
+      margin-bottom: 10%;
+    }
+  }
+ }
+

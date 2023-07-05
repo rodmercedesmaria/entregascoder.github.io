@@ -1,5 +1,6 @@
 $breakpoint: 480px;
 $breakpoint-plus-1: $breakpoint + 1;
+$cart-icon-size: 40px;
 
 @media (max-width: $breakpoint) {
     .header2 {
@@ -93,6 +94,12 @@ $breakpoint-plus-1: $breakpoint + 1;
     }
 }
 
+a {
+    img{
+        height: $cart-icon-size; 
+        width: $cart-icon-size;
+    } 
+}
 
 .banner {
     img{
