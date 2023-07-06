@@ -1,6 +1,7 @@
 $breakpoint: 480px;
 $breakpoint-plus-1: $breakpoint + 1;
 $cart-icon-size: 40px;
+$principalcolor: #343f5e;
 
 @media (max-width: $breakpoint) {
     .header2 {
@@ -17,6 +18,10 @@ $cart-icon-size: 40px;
             li a{
                 justify-content: left;
                 padding-left: 10px;
+                text-decoration: none;
+            }
+            .btn-secondary {
+                background-color: red;
             }
         }
         .navbar.navbar-light .container-fluid .d-flex {
@@ -69,7 +74,7 @@ $cart-icon-size: 40px;
 
 
 .header2 {
-    background-color: #343f5e;
+    background-color: $principalcolor;
     justify-content: space-between;
     align-items: center;
     width: auto;
@@ -109,7 +114,7 @@ a {
 
 /* Menú general */
 .menu {
-    background-color: #343f5e;
+    background-color: $principalcolor;
     padding: 1%;
     ul{ 
         display: flex;
@@ -122,6 +127,8 @@ a {
             margin-right: 20px;
             color: white;
             font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
             }
         }
     }

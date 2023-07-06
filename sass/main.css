@@ -22,6 +22,10 @@
   .header2 .menu__mobile li a {
     justify-content: left;
     padding-left: 10px;
+    text-decoration: none;
+  }
+  .header2 .menu__mobile .btn-secondary {
+    background-color: red;
   }
   .header2 .navbar.navbar-light .container-fluid .d-flex {
     grid-area: buscar;
@@ -115,6 +119,8 @@ a img {
   margin-right: 20px;
   color: white;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .custom-container {
@@ -404,6 +410,7 @@ h3 {
 .tituloSobreNosotros h1 {
   background-color: #feedd9;
   padding-top: 5%;
+  font-size: 350%;
   font-weight: bold;
   text-align: center;
   margin: 0;
@@ -426,10 +433,16 @@ h3 {
   justify-content: center;
 }
 .sobreNosotros .imagenQuienesSomos img {
-  width: 80%;
-  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .sobreNosotros .imagenQuienesSomos img {
+    width: 50%;
+    height: auto;
+  }
 }
 .sobreNosotros .detalleQuienesSomos {
   grid-row: 1;
@@ -467,30 +480,38 @@ h3 {
   padding: 5%;
 }
 .sobreNosotros .imagenNuestrahistoria img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .contacto {
-  background-color: black;
+  background-color: #343f5e;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5%;
-  padding: 5%;
+  padding: 2%;
   align-items: center;
 }
-.contacto h3 {
+.contacto h4 {
   text-align: center;
   grid-column: 1;
 }
-.contacto .formcontact {
-  grid-column: 2;
+.contacto .formcontacto p {
+  font-weight: 800;
+  font-size: x-large;
+}
+.contacto form .form-text {
+  color: white;
+  font-weight: 300;
+}
+.contacto form .btn {
+  background-color: rgb(110, 81, 229);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .sobreNosotros,
   .contacto {
     display: block;

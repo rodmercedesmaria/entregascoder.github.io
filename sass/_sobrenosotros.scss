@@ -1,9 +1,12 @@
-$breakpoint: 480px;
+$breakpoint: 768px;
+$principalcolor: #343f5e;
+$secondarycolor: #feedd9;
 
 .tituloSobreNosotros {   
     h1 {
-        background-color: #feedd9;
+        background-color: $secondarycolor;
         padding-top: 5%;
+        font-size: 350%;
         font-weight: bold;
         text-align: center;
         margin: 0;
@@ -12,27 +15,28 @@ $breakpoint: 480px;
 }
 
 .sobreNosotros {
-    background-color: #feedd9;
+    background-color: $secondarycolor;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 5%;
     padding: 5%;
-  
     .imagenQuienesSomos {
       grid-row: 1;
       grid-column: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-  
       img {
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
-      }
+            object-fit: cover;
+            width: 100%;
+            height:auto;
+            @media (max-width: $breakpoint) {
+            width: 50%;
+            height:auto;
+            }
+        }
     }
-  
     .detalleQuienesSomos {
         grid-row: 1;
         grid-column: 2/4;
@@ -71,30 +75,44 @@ $breakpoint: 480px;
         justify-content: center;
         padding: 5%;
         img {
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: auto;
             object-fit: cover;
         }
     }
 }
 
 .contacto {
-    background-color: black;
+    background-color: $principalcolor;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
-    padding: 5%;
+    padding: 2%;
     align-items: center;
-    h3 {
+    h4 {
         text-align: center;
         grid-column: 1;
     }
-    .formcontact {
-        grid-column: 2;
+   .formcontacto {
+        p{
+            font-weight: 800;
+            font-size:x-large; 
+        }
     }
+    form{
+        .form-text{
+            color: white;
+            font-weight: 300;
+        }
+        .btn {
+            background-color: rgb(110, 81, 229);
 
+        }
+    }
 }
+
+
 
 @media (max-width: $breakpoint) {
     .sobreNosotros,
