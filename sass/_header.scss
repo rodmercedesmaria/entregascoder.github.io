@@ -2,6 +2,7 @@ $breakpoint: 480px;
 $breakpoint-plus-1: $breakpoint + 1;
 $cart-icon-size: 40px;
 $principalcolor: #343f5e;
+$secondarycolor: #feedd9;
 
 @media (max-width: $breakpoint) {
     .header2 {

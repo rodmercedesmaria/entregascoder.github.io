@@ -1,5 +1,8 @@
+$principalcolor: #343f5e;
+$secondarycolor: #feedd9;
+
 .comoComprar {
-  background-color: #feedd9;
+  background-color: $secondarycolor;
   padding: 8%;
   font-family: 'Montserrat', sans-serif;
   
@@ -52,7 +55,7 @@
     padding: 2%; 
     font-family: 'Montserrat', sans-serif;
     background-color: #ff4342;
-    color: #feedd9;
+    color: $secondarycolor;
   }
 }
 

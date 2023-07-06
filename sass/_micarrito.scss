@@ -1,8 +1,9 @@
-
+$principalcolor: #343f5e;
+$secondarycolor: #feedd9;
 
 .carrito {
     text-align: center;
-    background-color:#feedd9;
+    background-color: $secondarycolor;
     font-family: 'Montserrat', sans-serif;
     padding: 5%;
     h2{   

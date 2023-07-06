@@ -1,7 +1,9 @@
+$principalcolor: #343f5e;
+$secondarycolor: #feedd9;
 
 .productos {
     display: flex;
-    background-color:#feedd9;
+    background-color:$secondarycolor;
     .filtro {
         margin: 4%;
         font-family: 'Montserrat', sans-serif;

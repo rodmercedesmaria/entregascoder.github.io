@@ -1,4 +1,6 @@
 $breakpoint: 480px;
+$principalcolor: #343f5e;
+$secondarycolor: #feedd9;
 
 
 
@@ -11,7 +13,7 @@ h3 {
 }
 
 .novedades{
-    background-color: #feedd9;
+    background-color: $secondarycolor;
     padding-bottom: 4%;
     .ultimasNovedades {
         display: flex;
@@ -30,7 +32,7 @@ h3 {
                 }
                 p {
                     text-align: center;
-                    color: #343f5e;
+                    color: $principalcolor;
                     font-weight: bold;
                     font-family: 'Montserrat', sans-serif;
                 }
@@ -85,7 +87,7 @@ h3 {
 }
 
 .ofertas {
-    background-color: #feedd9;
+    background-color: $secondarycolor;
     padding-bottom: 4%;
     img {
         align-items: center;
@@ -98,7 +100,7 @@ h3 {
 }
 
 .reconocimiento {
-    background-color: #feedd9;
+    background-color: $secondarycolor;
     padding-bottom: 4%;
     .premios {
         display: grid;
@@ -120,7 +122,7 @@ h3 {
             padding-bottom: 5%;
         }       
         .premio__detalle {
-            background-color: #feedd9;
+            background-color: $secondarycolor;
             padding: 5%;
             height: auto;
             font-family: 'Montserrat', sans-serif;
