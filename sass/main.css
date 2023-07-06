@@ -133,6 +133,10 @@ a img {
   color: white;
 }
 
+.new-window-link {
+  target-new: tab;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
