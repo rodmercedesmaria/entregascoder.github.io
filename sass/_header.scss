@@ -46,8 +46,8 @@ $cart-icon-size: 40px;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: "logo buscar carrito";
         .menu__mobile {
-        display: none;
-    }
+            display: none;
+        }
    }
 }
 
@@ -64,7 +64,6 @@ $cart-icon-size: 40px;
         font-size: 12px;
         justify-content: center;
         align-items: center;
-
     }
 }
 
